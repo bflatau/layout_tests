@@ -1,7 +1,23 @@
 Tests::Application.routes.draw do
-  get "pages/page1"
-  get "pages/page2"
-  get "pages/page3"
+  #get "sessions/new"
+
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]	
+
+
+  #get "pages/page1"
+  #get "pages/page2"
+  #get "pages/page3"
+
+match '/page1', :to => 'pages#page1'
+match '/page2', :to => 'pages#page2'
+match '/page3', :to => 'pages#page3'
+
+match '/signup', :to => 'users#new'
+match '/signin', :to => 'sessions#new'
+match '/signout', :to => 'sessions#destroy'
+
+root :to => 'pages#page1'
 
 
   # The priority is based upon order of creation:

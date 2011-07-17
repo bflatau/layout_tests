@@ -254,6 +254,7 @@ input.span-24, textarea.span-24 {width:938px;}
 .append-bottom {margin-bottom:1.5em;}
 /*.box {padding:.5em;margin-bottom:.5em;background:#733D1A;}*/
 .box {margin-bottom: .1em; margin-top: .01em;background:#5E3C17;}
+/* .box {margin-bottom: .1em; margin-top: .01em;background:#836b49;} matching color */  
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
